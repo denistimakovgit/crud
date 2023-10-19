@@ -24,7 +24,7 @@ jobs:
           POSTGRES_DB: ${{ env.NAME }}
           POSTGRES_USER: ${{ env.USERNAME }}
           POSTGRES_PASSWORD: ${{ env.PASSWORD }}
-        prots:
+        ports:
           - 5432:5432
         options:
           --health-cmd pg_isready
