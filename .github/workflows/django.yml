@@ -10,13 +10,13 @@ jobs:
     env:
       SECRET_KEY: ${{ secrets.SECRET_KEY }}
       IS_DEBUG: ${{ secrets.DJANGO_DEBUG }}
-      AVAILABLE_HOSTS: ${{ secret.ALLOWED_HOSTS }}
-      ENGINE: ${{ secret.DB_ENGINE }}
-      USERNAME: ${{ secret.DB_USER }}
-      PASSWORD: ${{ secret.DB_PASSWORD }}
-      HOST: ${{ secret.DB_HOST }}
-      NAME: ${{ secret.DB_NAME }}
-      PORT: ${{ secret.DB_PORT }}
+      AVAILABLE_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+      ENGINE: ${{ secrets.DB_ENGINE }}
+      USERNAME: ${{ secrets.DB_USER }}
+      PASSWORD: ${{ secrets.DB_PASSWORD }}
+      HOST: ${{ secrets.DB_HOST }}
+      NAME: ${{ secrets.DB_NAME }}
+      PORT: ${{ secrets.DB_PORT }}
     services:
       postgresql_service:
         image: postgres:12
